@@ -1,0 +1,14 @@
+.main-footer__developed-link {
+  color: #283645;
+  fill: #d22856;
+
+  &:hover,
+  &:focus {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}
