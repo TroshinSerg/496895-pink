@@ -10,7 +10,6 @@ var rename = require("gulp-rename");
 var image = require("gulp-image");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
-var svgmin = require("gulp-svgmin");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
@@ -37,13 +36,7 @@ gulp.task("images", function () {
         jpegoptim: false,
         jpegRecompress: true
     }))
-    .pipe(gulp.dest("source/img"));
-});
-
-gulp.task('svgmin', function () {
-    return gulp.src("source/img/*.svg")
-        .pipe(svgmin())
-        .pipe(gulp.dest("source/img/outsvg"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
