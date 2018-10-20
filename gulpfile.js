@@ -42,11 +42,12 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
   return gulp.src("source/icons/*.svg")
+    .pipe(image())
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -69,7 +70,6 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/*.{jpg,png,webp}",
     "source/js/**"
     ], {
       base: "source"
