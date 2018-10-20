@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Трошин](https://up.htmlacademy.ru/adaptive/15/user/496895).
-* Наставник: [Сергей Артёмов]((https://up.htmlacademy.ru/htmlcss/21/user/228892).
+* Наставник: [Сергей Артёмов](https://up.htmlacademy.ru/htmlcss/21/user/228892).
 
 ---
 

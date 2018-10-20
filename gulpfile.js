@@ -7,7 +7,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
-var image = require("gulp-imagemin");
+var image = require("gulp-image");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
@@ -31,11 +31,11 @@ gulp.task("css", function () {
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
-      ]))
+     .pipe(image({
+        mozjpeg: false,
+        jpegoptim: false,
+        jpegRecompress: true
+    }))
     .pipe(gulp.dest("source/img"));
 });
 
