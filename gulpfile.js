@@ -10,6 +10,7 @@ var rename = require("gulp-rename");
 var image = require("gulp-image");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
@@ -31,12 +32,18 @@ gulp.task("css", function () {
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-     .pipe(image({
+    .pipe(image({
         mozjpeg: false,
         jpegoptim: false,
         jpegRecompress: true
     }))
     .pipe(gulp.dest("source/img"));
+});
+
+gulp.task('svgmin', function () {
+    return gulp.src("source/img/*.svg")
+        .pipe(svgmin())
+        .pipe(gulp.dest("source/img/outsvg"));
 });
 
 gulp.task("webp", function () {
@@ -46,7 +53,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/*.svg")
+  return gulp.src("source/icons/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -69,7 +76,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/img/*.{jpg,png,webp}",
     "source/js/**"
     ], {
       base: "source"
