@@ -9,5 +9,73 @@
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="main-nav__inner">
+          <a class="logo">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-mobile.svg">
+              <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
+            </picture>
+          </a>
+          <button class="main-nav__toggle">
+            <span class="visually-hidden">Меню сайта</span>
+          </button>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item site-nav__item--current">
+              <a class="site-nav__link">Фотографии</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="heading">Фотографии пользователей</h1>
+    </header>
+    <main class="page">
+
+    </main>
+    <footer class="main-footer">
+      <a class="logo main-footer__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="logo__image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Pink">
+        </picture>
+      </a>
+      <ul class="social main-footer__social">
+        <li class="social__item">
+          <a class="social__link social__link--tw" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <p class="main-footer__developed">
+        Разработано
+        <a class="main-footer__developed-link" href="#" target="_blank">
+          <svg class="main-footer__developed-icon" width="60" height="60" role="img">
+            <title>Логотип HTML Academy</title>
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </p>
+    </footer>
   </body>
 </html>
