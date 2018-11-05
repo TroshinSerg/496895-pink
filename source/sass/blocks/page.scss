@@ -1,0 +1,19 @@
+.page__heading {
+  margin: 0 auto 20px;
+}
+
+.page__contest {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 660px) {
+  .page__heading {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .page__heading {
+    margin-bottom: 102px;
+  }
+}

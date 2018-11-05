@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="page">
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="main-header">
-      <nav class="main-nav">
+    <header class="page__header main-header">
+      <nav class="main-nav main-header__main-nav">
         <div class="main-nav__inner">
-          <a class="logo">
-            <picture>
-              <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-mobile.svg">
-              <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
-            </picture>
-          </a>
-          <button class="main-nav__toggle">
-            <span class="visually-hidden">Меню сайта</span>
-          </button>
-          <ul class="site-nav">
+          <div class="main-nav__logo-wrapper">
+            <a class="logo main-nav__logo">
+              <picture>
+                <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
+              </picture>
+            </a>
+            <button class="main-nav__toggle">
+              <span class="visually-hidden">Меню сайта</span>
+            </button>
+          </div>
+          <ul class="site-nav main-nav__list">
             <li class="site-nav__item site-nav__item--current">
               <a class="site-nav__link">Главная</a>
             </li>
@@ -38,8 +41,16 @@
           </ul>
         </div>
       </nav>
+
       <section class="offer">
         <h1 class="visually-hidden">Приложение Pink</h1>
+        <div class="offer__image-wrapper">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/iphone-hand-desktop@1x.png">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
+            <img class="offer__image" src="img/iphone-hand-mobile@1x.png" alt="Приложение Pink на iphone">
+          </picture>
+        </div>
         <div class="offer__description">
           <p class="offer__title">
             Взгляните на жизнь иначе!
@@ -66,25 +77,20 @@
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
         </div>
-        <div class="offer__image-wrapper">
-          <picture>
-            <source media="(min-width: 980px)" srcset="img/iphone-hand-desktop@1x.png">
-            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
-            <img src="img/iphone-screen-mobile@1x.png" alt="Приложение Pink на iphone">
-          </picture>
-        </div>
       </div>
     </header>
     <main class="page">
+      <div class="slogan">
+        <p class="slogan__text">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="slogan__text">
+          Нам есть, что вам предложить!
+        </p>
+      </div>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества приложения</h2>
         <div class="advantages__inner">
-          <p class="advantages__slogan">
-            Устали от серости мегаполиса?
-          </p>
-          <p>
-            Нам есть, что вам предложить!
-          </p>
           <ul class="advantages__list">
             <li class="advantages__item">
               <h3 class="advantages__heading">Поднимает настроение</h3>
@@ -155,7 +161,7 @@
         <div class="tariffs__inner">
           <h2 class="visually-hidden">Тарифы</h2>
           <table class="tariffs__table">
-            <thead>
+            <thead class="tariffs__thead">
               <tr>
                 <th class="tariffs__th tariffs__th--empty"></th>
                 <th class="tariffs__th">
@@ -173,7 +179,7 @@
                 </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="tariffs__tbody">
               <tr class="tariffs__row">
                 <td class="tariffs__cell">Розовый фильтр</td>
                 <td class="tariffs__cell tariffs__cell--yes">
@@ -244,7 +250,7 @@
           </ul>
         </div>
         <div class="contacts__map">
-          <!-- здесь будет карта -->
+          <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/-/CBBD5Tg2CA" allowfullscreen="true"></iframe>
         </div>
       </section>
     </main>
@@ -282,5 +288,6 @@
         </a>
       </p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

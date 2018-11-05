@@ -1,0 +1,21 @@
+.heading {
+  max-width: 320px;
+  padding: 0 20px;
+
+  @include text-size(24px, 1.2, #ffffff);
+  font-weight: 300;
+  text-align: center;
+}
+
+@media screen and (min-width: 660px) {
+  .heading {
+    font-size: 50px;
+    max-width: 660px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .heading {
+    max-width: 800px;
+  }
+}

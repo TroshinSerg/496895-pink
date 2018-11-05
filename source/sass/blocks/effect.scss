@@ -1,0 +1,9 @@
+.effect {
+  display: none;
+}
+
+@media screen and (min-width: 660px) {
+  .effect {
+    display: block;
+  }
+}
