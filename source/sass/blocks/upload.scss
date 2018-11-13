@@ -6,6 +6,7 @@
 .upload__text {
   max-width: 260px;
   margin: 0 auto 42px;
+
   @include text-size(14px, 30px);
   text-align: center;
 }
@@ -163,7 +164,7 @@
     margin: 0 0 51px;
   }
 
-  .__filter-wrapper {
+  .upload__filter-wrapper {
     width: 275px;
     position: relative;
     display: flex;

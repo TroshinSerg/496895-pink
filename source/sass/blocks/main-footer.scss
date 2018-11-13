@@ -1,7 +1,3 @@
-.main-footer {
-  /*padding-top: 42px;*/
-}
-
 .main-footer__inner {
   max-width: 320px;
   margin: 0 auto;
@@ -46,10 +42,6 @@
 }
 
 @media screen and (min-width: 660px) {
-  .main-footer {
-    /*padding-top: 84px;*///сделать отступ для блока с формой
-  }
-
   .main-footer__inner {
     max-width: 660px;
     padding: 0 20px;

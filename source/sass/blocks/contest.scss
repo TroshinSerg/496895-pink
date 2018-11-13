@@ -1,8 +1,6 @@
 .contest {
   max-width: 320px;
   padding-top: 45px;
-
-  outline: 1px solid #ff0000;
 }
 
 .contest__description {
@@ -333,10 +331,6 @@
     transform: translate(0);
   }
 
-  .contest__field-fields {//WTF???
-    display: flex;
-  }
-
   .contest__field-wrapper {
     display: flex;
     align-items: center;
@@ -427,7 +421,6 @@
 
   .contest__form {
     flex-direction: row;
-    /*justify-content: space-between;*/
     flex-wrap: wrap;
   }
 
