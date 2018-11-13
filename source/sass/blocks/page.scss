@@ -6,14 +6,31 @@
   margin: 0 auto;
 }
 
+.page__photos {
+  margin: 0 auto;
+}
+
+.page__upload {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 660px) {
   .page__heading {
     margin-bottom: 80px;
+  }
+
+  .page__upload {
+    margin-bottom: 34px;
   }
 }
 
 @media screen and (min-width: 960px) {
   .page__heading {
-    margin-bottom: 102px;
+    margin-bottom: 9px;//было 102px
+    max-width: 500px;//для страницы фото
+  }
+
+  .page__upload {
+    margin-bottom: 26px;
   }
 }
