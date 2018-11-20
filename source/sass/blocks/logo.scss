@@ -1,0 +1,85 @@
+.logo {
+  line-height: 1;
+}
+
+.logo:hover .logo__small,
+.logo:focus .logo__small,
+.logo:hover .logo__big,
+.logo:focus .logo__big,
+.logo:hover .logo__big-stars,
+.logo:focus .logo__big-stars {
+  fill: #d22856;
+}
+
+
+.logo:active .logo__small,
+.logo:active .logo__big,
+.logo:active .logo__big-stars {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.logo__small {
+  display: block;
+  width: 75px;
+  height: 22px;
+  fill: #ffffff;
+}
+
+.logo__footer {
+  width: 147px;
+  height: 40px;
+  fill: #283645;
+
+  &--big {
+    display: none;
+  }
+}
+
+.logo:hover .logo__footer,
+.logo:focus .logo__footer {
+  fill: #d22856;
+}
+
+.logo__big,
+.logo__big-stars {
+  display: none;
+  width: 147px;
+  height: 40px;
+  fill: #ffffff;
+}
+
+@media screen and (min-width: 660px) {
+  .logo__image {//old
+    width: 147px;
+    height: 40px;
+  }
+
+  .logo__small {
+    display: none;
+  }
+
+  .logo__big {
+    display: initial;
+  }
+
+  .logo__footer {
+    &--small {
+      display: none;
+    }
+
+    &--big {
+      display: initial;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .logo__big {
+    display: none;
+  }
+
+  .logo__big-stars {
+    display: initial;
+  }
+}

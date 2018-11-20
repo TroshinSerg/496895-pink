@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
 
 html {
   box-sizing: border-box;
@@ -10,20 +30,18 @@ html {
 }
 
 body {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
   min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
 }
 
 a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden {
@@ -37,8 +55,8 @@ img {
   border: 0;
 }
 
-$bg-color: #68b738;
-$Arial: "Arial", sans-serif;
+$bg-color: #f2f2f2;
+
 
 @mixin list-reset() {
   list-style: none;
@@ -46,7 +64,7 @@ $Arial: "Arial", sans-serif;
   margin: 0;
 }
 
-@mixin text-size($fz: 14px, $lh: 1, $c: #111111) {
+@mixin text-size($fz: 14px, $lh: 1, $c: #283645) {
   font-size: $fz;
   line-height: $lh;
   color: $c;

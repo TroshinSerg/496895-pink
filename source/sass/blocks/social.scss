@@ -1,4 +1,39 @@
 .social {
-  // временно
+  @include list-reset();
+  display: flex;
+  align-items: center;
+  max-width: 180px;
+}
+
+.social__item {
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
   display: block;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  border: solid 3px rgba(#283645, 0.1%);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &--tw {
+    background-size: 18px 14px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNy41IiBoZWlnaHQ9IjE0LjY2MyI+PHBhdGggZmlsbD0iI2QyMjg1NiIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTEuMjgzLjE1M2MxLjczNi0uNDg1IDMuMDc0LjI2MyAzLjY4NSAxLjE1MS42OTQtLjIyNiAxLjM3Mi0uNDcgMi4wNzItLjY5MS0uMDA0Ljg0MS0uNTM4IDEuNDc4LS44ODMgMS43MjcuNzA0LjE2NiAxLjM0My0uNDggMS4zNDMtLjQ4LS4xNzUuOTc2LTEuMDM1IDEuNzQ2LTEuNjExIDEuOTc3LS4yMzkgNi41OTItMy4yNzIgMTAuOTU2LTEwLjM4MiAxMC44MjNoLS40NmMtLjQyMiAwLTQuMjktLjQ1LTUuMDQ3LTEuODQzIDIuMzQxLjE5MiA0LjAxMS0uNDEyIDQuODM1LTEuMTUtLjk4OS0uMjkzLTIuNzYxLS40NjQtMy4wNy0yLjg4MS4zNjIuMTA1LjU4My4yMjMgMS4yMjguMTE3QzEuNzU3IDguMDY3LjM4NSA3LjM2Ni40NjEgNS4yMThjLjI5NC4zMiAxLjEuNTIzIDEuMzgxLjQ2MUMxLjExNyA1LjQ0NC0uMTg4IDIuMzk4LjkyMS44NDMgMi43OTQgMi42NTQgNC43NjkgNC4zNjQgOC4yOSA0LjUyOCA4LjUwNiAyLjI4OCA5LjQ2MS43ODcgMTEuMjgzLjE1M3oiLz48L3N2Zz4=");
+  }
+
+  &--fb {
+    background-size: 9px 18px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4LjY3MyIgaGVpZ2h0PSIxOC45NDQiPjxwYXRoIGZpbGw9IiNkMjI4NTYiIGQ9Ik02LjI3NSAzLjM1N2gyLjM5OFYwSDUuNzk1QzIuNjU2LjE4MSAxLjU0IDIuMzg3IDEuOTQ4IDYuMTE1SDB2My41MTdoMS45NTh2OS4zMTJoMy44MzdWOS42MzJoMi44NTdWNi4xMTVINS43ODZjLS4wMjEtMS4wNDUtLjAzNi0yLjQwNi40ODktMi43NTh6Ii8+PC9zdmc+");
+  }
+
+  &--youtube {
+    background-size: 15px 13px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNC42NCIgaGVpZ2h0PSIxMy45NiI+PHBhdGggZmlsbD0iI2QyMjg1NiIgZD0iTTEuNzc1IDEzLjc4Qy43OTkgMTQuMjU3IDAgMTMuNzU4IDAgMTIuNjcxVjEuMjlDMCAuMjAyLjc5OS0uMjk1IDEuNzc1LjE4MWwxMi4xMzMgNS45MzJjLjk3NS40NzguOTc1IDEuMjU4IDAgMS43MzZMMS43NzUgMTMuNzh6Ii8+PC9zdmc+");
+  }
 }

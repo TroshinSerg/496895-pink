@@ -1,0 +1,30 @@
+.page__heading {
+  margin: 0 auto 20px;
+}
+
+.page__contest,
+.page__photos,
+.page__upload {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 660px) {
+  .page__heading {
+    margin-bottom: 80px;
+  }
+
+  .page__upload {
+    margin-bottom: 34px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .page__heading {
+    margin-bottom: 9px;//было 102px
+    max-width: 500px;//для страницы фото
+  }
+
+  .page__upload {
+    margin-bottom: 26px;
+  }
+}
