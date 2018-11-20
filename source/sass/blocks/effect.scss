@@ -5,5 +5,82 @@
 @media screen and (min-width: 660px) {
   .effect {
     display: block;
+    position: relative;
+  }
+
+  .effect__inner {
+    position: relative;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 95px 30px 83px 329px;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 202px 202px, 238px 276px;
+    background-position: 37px 115px, 20px 60px;
+
+    &::before {
+      position: absolute;
+      content: "24";
+      height: 70px;
+      top: 136px;
+      left: 82px;
+      width: 106px;
+      font-size: 96px;
+      line-height: 150px;
+      font-weight: 700;
+      color: #d22856;
+    }
+  }
+
+  .effect__heading {
+    max-width: 250px;
+    margin: 0 0 10px;
+
+    @include text-size(30px, 36px, #000000);
+  }
+
+  .effect__text {
+    margin: 0 0 11px;
+  }
+
+  .effect__link {
+    color: #d22856;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .effect {
+    background-color: #f2f2f2;
+  }
+
+  .effect__inner {
+    max-width: 940px;
+    padding: 121px 30px 113px 366px;
+    background-size: 253px 253px, 298px 345px;
+    background-position: 23px 99px, 0 31px;
+
+    &::before {
+      top: 130px;
+      left: 80px;
+      width: 131px;
+      height: 87px;
+      font-size: 120px;
+      line-height: 180px;
+    }
+  }
+
+  .effect__heading {
+    max-width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .effect__text {
+    @include text-size(18px, 30px);
+    margin: 0 0 32px;
+  }
+
+  .effect__link {
+    @include text-size(18px, 30px, #d22856);
   }
 }

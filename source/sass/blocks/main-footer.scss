@@ -1,3 +1,9 @@
+.main-footer {
+  &--homepage {
+    display: none;
+  }
+}
+
 .main-footer__inner {
   max-width: 320px;
   margin: 0 auto;
@@ -42,6 +48,12 @@
 }
 
 @media screen and (min-width: 660px) {
+  .main-footer {
+    &--homepage {
+      display: block;
+    }
+  }
+
   .main-footer__inner {
     max-width: 660px;
     padding: 0 20px;
@@ -75,10 +87,6 @@
 }
 
 @media screen and (min-width: 960px) {
-  .main-footer {
-    padding-top: 65px;
-  }
-
   .main-footer__inner {
     max-width: 960px;
     padding: 0 10px;
@@ -89,6 +97,6 @@
   }
 
   .main-footer__social {
-    margin-left: 20px;
+    margin-left: 6px;
   }
 }

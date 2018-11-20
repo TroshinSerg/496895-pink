@@ -15,11 +15,15 @@
         <div class="main-nav__inner">
           <div class="main-nav__logo-wrapper">
             <a class="logo main-nav__logo" href="index.html">
-              <picture>
-                <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
-              </picture>
+              <svg class="logo__big-stars" width="147" height="40" aria-label="Логотип Pink" role="img">
+                <use xlink:href="#logo-pink-white-desktop"></use>
+              </svg>
+              <svg class="logo__big" width="147" height="40" aria-label="Логотип Pink" role="img">
+                <use xlink:href="#logo-pink-white-tablet"></use>
+              </svg>
+              <svg class="logo__small" width="75" height="22" aria-label="Логотип Pink" role="img">
+                <use xlink:href="#logo-pink-white-mobile"></use>
+              </svg>
             </a>
             <button class="main-nav__toggle">
               <span class="visually-hidden">Меню сайта</span>
@@ -144,10 +148,12 @@
     <footer class="main-footer">
       <div class="main-footer__inner">
         <a class="logo main-footer__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 660px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img class="logo__image" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Pink">
-          </picture>
+          <svg class="logo__footer logo__footer--big" width="147" height="40" aria-label="Логотип Pink" role="img">
+            <use xlink:href="#logo-pink-blue-desktop"></use>
+          </svg>
+          <svg class="logo__footer logo__footer--small" width="147" height="40" aria-label="Логотип Pink" role="img">
+            <use xlink:href="#logo-pink-blue-mobile"></use>
+          </svg>
         </a>
         <ul class="social main-footer__social">
           <li class="social__item">
