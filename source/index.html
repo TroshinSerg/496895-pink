@@ -15,20 +15,15 @@
         <div class="main-nav__inner">
           <div class="main-nav__logo-wrapper">
             <a class="logo main-nav__logo">
-              <svg class="logo__big-stars" width="147" height="40" aria-label="Логотип Pink" role="img">
+              <svg class="logo__big-stars" width="147" height="40" role="img">
                 <use xlink:href="#logo-pink-white-desktop"></use>
               </svg>
-              <svg class="logo__big" width="147" height="40" aria-label="Логотип Pink" role="img">
+              <svg class="logo__big" width="147" height="40" role="img">
                 <use xlink:href="#logo-pink-white-tablet"></use>
               </svg>
               <svg class="logo__small" width="75" height="22" aria-label="Логотип Pink" role="img">
                 <use xlink:href="#logo-pink-white-mobile"></use>
               </svg>
-              <picture style="display: none;"><!--удалить-->
-                <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
-              </picture>
             </a>
             <button class="main-nav__toggle">
               <span class="visually-hidden">Меню сайта</span>
@@ -53,9 +48,12 @@
       <div class="main-header__inner">
         <div class="main-header__image-wrapper">
           <picture class="main-header__picture">
-            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png">
-            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
-            <img class="main-header__image" src="img/iphone-hand-mobile@1x.png" alt="Приложение Pink">
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img class="main-header__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Pink">
           </picture>
         </div>
         <section class="main-header__get-app get-app">
@@ -84,8 +82,6 @@
         </div>
       </section>
       </div>
-
-
     </header>
     <main class="page">
       <div class="slogan">
@@ -274,7 +270,7 @@
           <svg class="logo__footer logo__footer--big" width="147" height="40" aria-label="Логотип Pink" role="img">
             <use xlink:href="#logo-pink-blue-desktop"></use>
           </svg>
-          <svg class="logo__footer logo__footer--small" width="147" height="40" aria-label="Логотип Pink" role="img">
+          <svg class="logo__footer logo__footer--small" width="147" height="40" aria-label="Логотип Pink" aria-label="Логотип Pink" role="img">
             <use xlink:href="#logo-pink-blue-mobile"></use>
           </svg>
         </a>
@@ -297,7 +293,7 @@
         </ul>
         <p class="main-footer__developed">
           Разработано
-          <a class="main-footer__developed-link" href="#" target="_blank">
+          <a class="main-footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <svg class="main-footer__developed-icon" width="60" height="60" aria-label="Логотип HTML Academy" role="img">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>
