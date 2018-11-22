@@ -108,7 +108,7 @@
   display: none;
   position: absolute;
   bottom: -33px;
-  left: -11px;
+  left: -17px;
   width: 240px;
   height: 2px;
   background-color: #000000;
@@ -191,6 +191,20 @@
 
     &--contrast {
       left: 96px;
+    }
+  }
+
+  .upload__btn {
+    &--crop {
+      margin-left: 3px;
+    }
+
+    &--fill {
+      margin-left: 3px;
+    }
+
+    &--contrast {
+      margin-left: 7px;
     }
   }
 

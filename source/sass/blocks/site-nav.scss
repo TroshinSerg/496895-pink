@@ -5,7 +5,8 @@
   overflow: hidden;
 }
 
-.site-nav--opened {
+.site-nav--opened,
+.no-js .site-nav {
   height: auto;
 }
 
@@ -16,12 +17,16 @@
 
 .site-nav__link {
   display: block;
-  padding: 23px 0;
+  padding: 23px 0 22.5px;
 
   @include text-size(18px, 1, #ffffff);
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+
+  &--homepage {
+    padding-top: 24.5px;
+  }
 
   &:hover,
   &:focus {

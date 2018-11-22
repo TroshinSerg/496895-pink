@@ -70,7 +70,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**/*.{jpg,png,svg}", // временно
+    "source/img/**/*.{jpg,png,svg}",
     "source/js/**"
     ], {
       base: "source"
