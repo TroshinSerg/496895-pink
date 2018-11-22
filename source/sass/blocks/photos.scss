@@ -1,6 +1,4 @@
-.photos {/*
-  max-width: 320px;
-  padding: 0 20px;*/
+.photos {
   padding-top: 44px;
 }
 
@@ -45,10 +43,10 @@
   display: block;
   width: 280px;
   height: auto;
-}
 
-.photos__image--panorama {
-  width: 320px;
+  &--panorama {
+    width: 320px;
+  }
 }
 
 .photos__author {
@@ -63,7 +61,6 @@
 
 .photos__details {
   width: 280px;
-
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -106,8 +103,7 @@
     width: 660px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 60px;
-    outline: 1px solid red;
+    padding-top: 93px;
   }
 
   .photos__text {

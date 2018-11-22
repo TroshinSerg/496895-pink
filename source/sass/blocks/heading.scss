@@ -16,6 +16,10 @@
 
 @media screen and (min-width: 960px) {
   .heading {
-    max-width: 800px;
+    max-width: 500px;
+
+    &--max {
+      max-width: 800px;
+    }
   }
 }

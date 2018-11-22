@@ -1,6 +1,7 @@
 .upload {
   max-width: 320px;
   padding-top: 44px;
+  padding-bottom: 43px;
 }
 
 .upload__text {
@@ -44,23 +45,23 @@
   &:active {
     color: rgba(#ffffff, 0.3%);
   }
-}
 
-.upload__button--reset {
-  border-color: rgba(#283645, 0.1%);
-  color: rgba(#283645, 0.1%);
-  margin-bottom: 18px;
+  &--reset {
+    border-color: rgba(#283645, 0.1%);
+    color: rgba(#283645, 0.1%);
+    margin-bottom: 18px;
 
-  &:hover,
-  &:focus {
-    border-color: rgba(#283645, 0.3%);
-    color: rgba(#283645, 0.3%);
-    background-color: #f2f2f2;
-  }
+    &:hover,
+    &:focus {
+      border-color: rgba(#283645, 0.3%);
+      color: rgba(#283645, 0.3%);
+      background-color: #f2f2f2;
+    }
 
-  &:active {
-    background-color: rgba(#283645, 0.3%);
-    color: rgba(#ffffff, 0.3%);
+    &:active {
+      background-color: rgba(#283645, 0.3%);
+      color: rgba(#ffffff, 0.3%);
+    }
   }
 }
 
@@ -70,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 224px;
+  width: 210px;
   margin: 0 auto 106px;
 }
 
@@ -137,6 +138,7 @@
 @media screen and (min-width: 660px) {
   .upload {
     padding-top: 45px;
+    padding-bottom: 34px;
     max-width: 660px;
   }
 
@@ -223,7 +225,7 @@
 @media screen and (min-width: 960px) {
   .upload {
     max-width: 960px;
-    padding: 5px 10px 0 10px;
+    padding: 5px 10px 65px 10px;
   }
 
   .upload__text {

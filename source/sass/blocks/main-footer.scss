@@ -87,6 +87,10 @@
 }
 
 @media screen and (min-width: 960px) {
+  .main-footer {
+    padding-bottom: 60px;
+  }
+
   .main-footer__inner {
     max-width: 960px;
     padding: 0 10px;
