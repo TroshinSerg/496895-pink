@@ -129,8 +129,10 @@
   border: solid 2px #d22856;
   background-color: #f2f2f2;
   cursor: pointer;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #d22856;
   }
 }

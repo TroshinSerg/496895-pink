@@ -1,7 +1,8 @@
 .main-header {
   width: 320px;
-  padding-bottom: 38px;
+  //padding-bottom: 38px;
   border-bottom: solid 1px #ffffff;
+  background-color: #1d2631;
   background-repeat: no-repeat;
   background-size: 320px auto;
   background-position: 50% 0;
@@ -9,7 +10,6 @@
 
   &--inner-page {
     padding-bottom: 64px;
-    background-color: transparent;
   }
 
   &--form {
@@ -29,6 +29,10 @@
   background-position: 50% 0;
   background-size: 320px auto;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.main-header__get-app {
+  margin-bottom: 38px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -54,7 +58,7 @@
 }
 
 .main-header__main-nav {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .main-header__offer {

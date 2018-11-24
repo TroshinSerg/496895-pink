@@ -8,7 +8,7 @@
 .advantages__list {
   position: relative;
   list-style: none;
-  padding: 113px 0 0;
+  padding: 111px 0 0;
   margin: 0;
 }
 
@@ -100,7 +100,7 @@
 
 @media screen and (min-width: 960px) {
   .advantages {
-    padding-top: 75px;
+    padding-top: 73px;//было 75
     background-image: linear-gradient(356deg, #f2f2f2 0%, #f2f2f2 77.5%, #ffffff 77.5%, #ffffff 100%);
   }
 
@@ -124,7 +124,7 @@
       display: block;
       width: 300px;
       height: 302px;
-      margin-bottom: 54px;
+      margin-bottom: 56px;//было 54
       background-repeat: no-repeat;
       background-size: 292px 302px;
       background-position: 50% 50%;

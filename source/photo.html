@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink - Фото</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
@@ -189,11 +192,11 @@
             <article class="photos__item-inner">
               <a class="photos__link" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1px, img/photo-pov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
                   <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1px, img/photo-pov-tablet@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                   <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Горы">
                 </picture>
               </a>
@@ -241,6 +244,7 @@
         </ul>
       </section>
       <section class="page__upload upload">
+        <h2 class="visually-hidden">Форма загрузки фото</h2>
         <p class="upload__text">
           Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!
         </p>
@@ -267,7 +271,9 @@
                 </button>
                 <div class="upload__range upload__range--active">
                   <div class="upload__toggle-wrapper">
-                    <div class="upload__toggle upload__toggle--crop"></div>
+                    <div class="upload__toggle upload__toggle--crop" tabindex="0">
+                      <span class="visually-hidden">Кадрирование</span>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -279,7 +285,9 @@
                 </button>
                 <div class="upload__range">
                   <div class="upload__toggle-wrapper">
-                    <div class="upload__toggle upload__toggle--fill"></div>
+                    <div class="upload__toggle upload__toggle--fill" tabindex="0">
+                      <span class="visually-hidden">Заливка</span>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -291,7 +299,9 @@
                 </button>
                 <div class="upload__range">
                   <div class="upload__toggle-wrapper">
-                    <div class="upload__toggle upload__toggle--contrast"></div>
+                    <div class="upload__toggle upload__toggle--contrast" tabindex="0">
+                      <span class="visually-hidden">Контраст</span>
+                    </div>
                   </div>
                 </div>
               </li>

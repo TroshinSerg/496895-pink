@@ -1,8 +1,12 @@
+.slogan {
+  padding-top: 38px;
+}
+
 .slogan__text {
   max-width: 210px;
-  margin: 0 auto 26px;
+  margin: 0 auto 25px;
 
-  @include text-size(24px, 1.29);
+  @include text-size(24px, 31px);
   font-weight: 300;
   text-align: center;
 
@@ -20,7 +24,7 @@
     max-width: 100%;
     margin: 0 auto 0;
 
-    @include text-size(40px, 1.23);
+    @include text-size(40px, 48px);
 
     &:last-child {
       max-width: 340px;
@@ -34,7 +38,7 @@
   }
 
   .slogan__text {
-    @include text-size(50px, 1.23);
+    @include text-size(50px, 60px);
 
     &:last-child {
       max-width: 430px;

@@ -81,7 +81,7 @@
     border: none;
     background-color: transparent;
 
-    @include text-size(14px);
+    @include text-size(14px, 14px);
     padding-left: 24px;
     padding-top: 24.5px;
     text-transform: uppercase;
@@ -174,7 +174,7 @@
       position: initial;
       transform: translateX(0);
 
-      @include text-size(14px);
+      @include text-size(14px, 14px);
       padding-left: 15px;
       padding-top: 0;
       text-transform: initial;
@@ -226,8 +226,9 @@
     background-position: right 50% top 50%;
 
     &--option {
-      @include text-size(18px);
+      @include text-size(18px, 18px);
       padding-left: 21px;
+      background-color: #ffffff;
     }
   }
 }

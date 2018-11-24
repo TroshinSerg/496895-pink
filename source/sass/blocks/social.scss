@@ -21,6 +21,7 @@
   border: solid 3px rgba(#283645, 0.1%);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  outline: none;
 
   &--tw {
     background-size: 18px 14px;
@@ -35,5 +36,15 @@
   &--youtube {
     background-size: 15px 13px;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNC42NCIgaGVpZ2h0PSIxMy45NiI+PHBhdGggZmlsbD0iI2QyMjg1NiIgZD0iTTEuNzc1IDEzLjc4Qy43OTkgMTQuMjU3IDAgMTMuNzU4IDAgMTIuNjcxVjEuMjlDMCAuMjAyLjc5OS0uMjk1IDEuNzc1LjE4MWwxMi4xMzMgNS45MzJjLjk3NS40NzguOTc1IDEuMjU4IDAgMS43MzZMMS43NzUgMTMuNzh6Ii8+PC9zdmc+");
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border-color: rgba(#283645, 0.5%);
   }
 }
