@@ -1,6 +1,5 @@
 .main-header {
   width: 320px;
-  //padding-bottom: 38px;
   border-bottom: solid 1px #ffffff;
   background-color: #1d2631;
   background-repeat: no-repeat;
@@ -29,10 +28,6 @@
   background-position: 50% 0;
   background-size: 320px auto;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-}
-
-.main-header__get-app {
-  margin-bottom: 38px;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
